@@ -19,6 +19,15 @@ const HamburguerMenu = (props: HamburguerMenuProps) => {
         <li>
           <Link
             className="block hover:text-blue-500 hover:bg-[#F4F4F4] py-2 rounded"
+            href={"https://www.morphmarket.com/"}
+            onClick={() => setToggle(false)}
+          >
+            Visit Morph Market
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="block hover:text-blue-500 hover:bg-[#F4F4F4] py-2 rounded"
             href={"/shop"}
             onClick={() => setToggle(false)}
           >

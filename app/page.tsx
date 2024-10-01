@@ -23,13 +23,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-20 lg:flex lg:items-end">
-          <div className="flex justify-end">
+        <div className="lg:flex lg:items-center relative">
+          <div className="flex justify-end relative" style={{ right: '-200px' }}>
             <img
-              src="/gecko-home.png"
-              alt="Your Image"
-              className="h-72 w-fit md:h-96 lg:w-[55rem] lg:h-auto"
-              //className="object-cover h-83 w-96"
+              src="/gecko-hero.jpeg"
+              alt="Gecko Hero Image"
+              className="py-2 h-72 w-fit md:h-96 lg:w-[100rem] lg:h-auto"
             />
           </div>
         </div>
@@ -160,6 +159,46 @@ export default function Home() {
           />
         </div>
       </div>
+
+      {/* Morph Market Section */}
+      <div className="bg-white lg:h-50rem xl:h-40rem grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-2">
+        {/* Left column */}
+        <div className="flex justify-center items-center h-full">
+          <div className="flex flex-col w-9/12 text-black md:w-8/12 md:text-center lg:w-7/12 justify-center items-center">
+            <p className=" mb-6 text-center font-semibold text-3xl mt-10 md:text-3xl lg:text-3xl xl:text-4xl">
+              +5,000 breeders worldwide
+            </p>
+            <p className="mb-8 md:text-sm xl:text-lg text-center md:mb-5">
+              Discover the world's largest marketplace for reptiles, amphibians, and invertebrates.
+              Connecting breeders and keepers through ethical and efficient commerce.
+            </p>
+            {/* Button only appears below 'lg' */}
+            <div className="lg:hidden mt-4">
+              <button className="bg-orange-500 text-white font-medium py-3 px-6 rounded-md">
+                Visit Morph Market
+              </button>
+            </div>
+          </div>
+        </div>
+
+        {/* Middle column (adjusting image alignment) */}
+        <div className="flex items-center justify-center h-full">
+          <img
+            className="md:w-[45rem] md:h-auto object-cover"
+            src="/morph-gecko.webp"
+            alt="Gecko"
+          />
+        </div>
+
+        {/* Right column (only visible at lg and above, centered) */}
+        <div className="hidden lg:flex justify-center items-center h-full">
+          <button className="bg-orange-500 text-white font-medium py-3 px-6 rounded-md">
+            Visit Morph Market
+          </button>
+        </div>
+      </div>
+
+
     </div>
   );
 }
