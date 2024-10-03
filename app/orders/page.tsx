@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "next/";
 import OrderCard from "../components/OrderCard/OrderCard";
 import { auth } from "@clerk/nextjs";
 

@@ -169,7 +169,7 @@ export default function Home() {
               +5,000 breeders worldwide
             </p>
             <p className="mb-8 md:text-sm xl:text-lg text-center md:mb-5">
-              Discover the world's largest marketplace for reptiles, amphibians, and invertebrates.
+              Discover the world&apos;s largest marketplace for reptiles, amphibians, and invertebrates.
               Connecting breeders and keepers through ethical and efficient commerce.
             </p>
             {/* Button only appears below 'lg' */}

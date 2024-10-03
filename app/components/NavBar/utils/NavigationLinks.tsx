@@ -8,6 +8,7 @@ const NavigationLinks = () => {
         <li className="hover:text-blue-500">
           <MorphMarketButton />
         </li>
+        <li className="hover:text-blue-500"><Link href={"/blog"}>Blog</Link></li>
         <li className="hover:text-blue-500"><Link href={"/shop"}>Shop</Link></li>
         <li className="hover:text-blue-500"><Link href={"/orders"}>My Orders</Link></li>
       </ul>
