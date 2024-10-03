@@ -9,9 +9,14 @@ export default function Home() {
         <div className="flex justify-center lg:justify-end pt-32 lg:pt-52">
           <div className="w-8/12 text-left lg:text-left">
             <p className="text-5xl mb-5 md:text-6xl lg:text-7xl">Geckogen</p>
-            <p className="text-xl md:text-2xl mb-14">
-              Home of the Monochrome. Over 20 years of gecko morph design in New
-              Cadelionia.
+            <p className="md:text-2xl lg:text-xl mb-7">
+            Changing the mentality from “pet ownership“ to a “partnership” by focusing on the preservation of non-human species. 
+            </p>
+            <p className="md:text-2xl lg:text-xl mb-7">
+              A partnership where we become guardians rather than owners by using science to improve conditions for all living things.
+            </p>
+            <p className="reenie-beanie-regular text-3xl mb-10">
+              Edgar A. Machuca Sahagun
             </p>
             <div className="whitespace-nowrap">
               <Link
@@ -26,7 +31,7 @@ export default function Home() {
         <div className="lg:flex lg:items-center relative">
           <div className="flex justify-end relative" style={{ right: '-200px' }}>
             <img
-              src="/gecko-hero.jpeg"
+              src="/gecko-hero-bw.jpeg"
               alt="Gecko Hero Image"
               className="py-2 h-72 w-fit md:h-96 lg:w-[100rem] lg:h-auto"
             />
@@ -161,22 +166,28 @@ export default function Home() {
       </div>
 
       {/* Morph Market Section */}
-      <div className="bg-white lg:h-50rem xl:h-40rem grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-2">
+<div className="bg-white lg:h-50rem xl:h-40rem grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-2">
         {/* Left column */}
         <div className="flex justify-center items-center h-full">
           <div className="flex flex-col w-9/12 text-black md:w-8/12 md:text-center lg:w-7/12 justify-center items-center">
-            <p className=" mb-6 text-center font-semibold text-3xl mt-10 md:text-3xl lg:text-3xl xl:text-4xl">
+            <p className="mb-6 text-center font-semibold text-3xl mt-10 md:text-3xl lg:text-3xl xl:text-4xl">
               +5,000 breeders worldwide
             </p>
             <p className="mb-8 md:text-sm xl:text-lg text-center md:mb-5">
               Discover the world&apos;s largest marketplace for reptiles, amphibians, and invertebrates.
               Connecting breeders and keepers through ethical and efficient commerce.
             </p>
-            {/* Button only appears below 'lg' */}
+            {/* Button for smaller screens */}
             <div className="lg:hidden mt-4">
-              <button className="bg-orange-500 text-white font-medium py-3 px-6 rounded-md">
-                Visit Morph Market
-              </button>
+              <a
+                href="https://www.morphmarket.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <button className="bg-orange-500 text-white font-medium py-3 px-6 rounded-md">
+                  Visit Morph Market
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -190,11 +201,17 @@ export default function Home() {
           />
         </div>
 
-        {/* Right column (only visible at lg and above, centered) */}
+        {/* Right column (only visible at lg and above) */}
         <div className="hidden lg:flex justify-center items-center h-full">
-          <button className="bg-orange-500 text-white font-medium py-3 px-6 rounded-md">
-            Visit Morph Market
-          </button>
+          <a
+            href="https://www.morphmarket.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="bg-orange-500 text-white font-medium py-3 px-6 rounded-md">
+              Visit Morph Market
+            </button>
+          </a>
         </div>
       </div>
 
