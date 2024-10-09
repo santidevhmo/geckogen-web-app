@@ -5,12 +5,12 @@ export default function Home() {
   return (
     <div>
       {/* Geckogen */}
-      <div className="lg:flex lg:h-[55rem] lg:justify-end">
+      <div className="lg:flex lg:h-[48rem] lg:justify-end">
         <div className="flex justify-center lg:justify-end pt-32 lg:pt-52">
           <div className="w-8/12 text-left lg:text-left">
             <p className="text-5xl mb-5 md:text-6xl lg:text-7xl">Geckogen</p>
             <p className="md:text-2xl lg:text-xl mb-7">
-            Changing the mentality from “pet ownership“ to a “partnership” by focusing on the preservation of non-human species. 
+              Changing the mentality from “pet ownership“ to a “partnership” by focusing on the preservation of non-human species.
             </p>
             <p className="md:text-2xl lg:text-xl mb-7">
               A partnership where we become guardians rather than owners by using science to improve conditions for all living things.
@@ -77,22 +77,31 @@ export default function Home() {
             </p>
             <br />
             <p className="text-lg">
-              The service will be a non intrusive collection approach and will
-              require a shed sample. The pilot is to begin requesting samples
+              The service will be a non intrusive collection approach. The pilot is to begin requesting samples
               from collectors that wish to participate.
             </p>
+            <div className="whitespace-nowrap mt-20">
+              <Link
+                className="py-4 px-6 mr-4 cursor-pointer rounded-full w-28 bg-blue-500 text-white lg:text-lg"
+                href={"https://www.instagram.com/geckogen"} target="_blank">
+                Contact Us for more information
+              </Link>
+            </div>
           </div>
         </div>
-        <div className="flex justify-center items-end">
+        <div className="flex justify-center items-center">
           <img
-            className="object-cover h-[20rem] w-[25rem] lg:h-[30rem] lg:w-[70rem]"
-            src="/gecko-dna-section.png"
+            className="object-cover h-[20rem] w-[25rem] lg:h-[30rem] lg:w-[70rem] rounded-full mb-20"
+            src="/dna-geckogen.webp"
             alt=""
           />
         </div>
       </div>
 
-      {/* Featured Products */}
+      {/*
+      {
+        // Featured Products 
+      }
       <div className="py-14">
         <div className="flex justify-center mt-4">
           <div className="w-8/12 md:w-8/12 text-center">
@@ -101,7 +110,9 @@ export default function Home() {
         </div>
         <div className="flex justify-center py-10">
           <div className="w-8/12 md:w-10/12 flex flex-wrap justify-center gap-5 gap-y-12">
-            {/* Gecko 1 */}
+            {
+              // Gecko 1
+            }
             <ProductCard
               productId="prod_P3dqsxunfez7bg"
               productTitle="Full Pin Extreme C19"
@@ -109,7 +120,9 @@ export default function Home() {
               productPrice={320}
             />
 
-            {/* Gecko 2 */}
+            {
+              // Gecko 2
+            }
             <ProductCard
               productId="prod_P3dFNDH77Hs7Og"
               productTitle="Red Stripe G24"
@@ -117,7 +130,9 @@ export default function Home() {
               productPrice={180}
             />
 
-            {/* Gecko 3 */}
+            {
+              // Gecko 3
+            }
             <ProductCard
               productId="prod_P3cqKug3rGhkgZ"
               productTitle="Wide Back F G11"
@@ -137,36 +152,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Our Specimens */}
-      <div className="bg-black md:h-[40rem] md:flex md:flex-row-reverse">
-        <div className="flex justify-center items-center">
-          <div className="w-8/12 text-gray-200 pt-20 md:pt-0 md:w-8/12 md:text-right lg:w-7/12">
-            <p className="text-5xl mb-5 md:text-6xl">Our Specimens</p>
-            <p className="text-lg">
-              We offer you a healthy high quality specimen, housed individually,
-              but handled often. We are committed to ensure a long lasting
-              relationship between you and your pet.
-            </p>
-            <br />
-            <p className="text-lg">
-              Our goal is to make sure every gecko thrives while in your care.
-              We ensure this by having an open line of communication to answer
-              questions.
-            </p>
-          </div>
-        </div>
-        <div className="pb-14 flex items-center lg:pb-24">
-          <img
-            className="w-96 h-96 md:w-[50rem] md:h-auto"
-            src="/side-profile-gecko.png"
-            alt=""
-          />
-        </div>
-      </div>
+    */}
 
       {/* Morph Market Section */}
-<div className="bg-white lg:h-50rem xl:h-40rem grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-2">
+      <div className="bg-white lg:h-50rem xl:h-40rem grid grid-cols-1 lg:grid-cols-3 lg:grid-rows-1 md:grid-cols-2">
         {/* Left column */}
         <div className="flex justify-center items-center h-full">
           <div className="flex flex-col w-9/12 text-black md:w-8/12 md:text-center lg:w-7/12 justify-center items-center">
@@ -212,6 +201,33 @@ export default function Home() {
               Visit Morph Market
             </button>
           </a>
+        </div>
+      </div>
+
+      {/* Our Specimens */}
+      <div className="bg-black md:h-[40rem] md:flex md:flex-row-reverse">
+        <div className="flex justify-center items-center">
+          <div className="w-8/12 text-gray-200 pt-20 md:pt-0 md:w-8/12 md:text-right lg:w-7/12">
+            <p className="text-5xl mb-5 md:text-6xl">Our Specimens</p>
+            <p className="text-lg">
+              We offer you a healthy high quality specimen, housed individually,
+              but handled often. We are committed to ensure a long lasting
+              relationship between you and your pet.
+            </p>
+            <br />
+            <p className="text-lg">
+              Our goal is to make sure every gecko thrives while in your care.
+              We ensure this by having an open line of communication to answer
+              questions.
+            </p>
+          </div>
+        </div>
+        <div className="pb-14 flex items-center lg:pb-24">
+          <img
+            className="w-96 h-96 md:w-[50rem] md:h-auto"
+            src="/side-profile-gecko.png"
+            alt=""
+          />
         </div>
       </div>
 
